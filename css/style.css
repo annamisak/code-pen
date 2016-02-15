@@ -582,6 +582,12 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
 h2 {
   font-family: "Playball", Arial, sans-serif;
 }
@@ -629,12 +635,14 @@ h2 {
   position: relative;
   z-index: 10;
   opacity: 0;
+  padding-left: 1em;
 }
 
 .bah-accordion_element_check:checked ~ .bah-accordion_element_content {
   margin-top: 1em;
   height: auto;
   opacity: 1;
+  padding-left: 1em;
   transition: all 1s ease-out 0s;
 }
 
