@@ -28,7 +28,7 @@ body {
 header {
   width: 100%;
   background-color: $pink;
-  padding: 4em 1.5em;
+  padding: 2em 1.5em;
 }
 
 h1 {
@@ -40,18 +40,19 @@ h1 {
 
 h2 {
   font-family: $playball;
+  line-height: 1.9em;
+  padding-left: .4em;
+
 }
 
 .bah-accordion {
   width: 100%;
-  margin: 10px auto 30px auto;
   text-align: left;
 }
 
 .bah-accordion_element_header {
   margin-top: 30px;
   height: 2em;
-  padding-bottom: 10px;
   position: relative;
   z-index: 20;
   display: block;
@@ -62,17 +63,11 @@ h2 {
   }
 }
 
-.bah-accordion_element_check:checked + .bah-accordion_element_header{
-  height: 2em;
-
-  &:hover:after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 2em;
-    right: 13px;
-    top: 7px;
-  }
+.bah-accordion_element_check:checked + .bah-accordion_element_header {
+  height: 3em;
+  background-color: $lightpink;
+  color: $pink;
+  border-bottom: 1px solid $pink;
 }
 
 .bah-accordion_element_check {
@@ -89,12 +84,10 @@ h2 {
 }
 
 .bah-accordion_element_check:checked ~ .bah-accordion_element_content {
-  margin-top: 1em;
+  margin-top: .5em;
   height: auto;
   opacity: 1;
   padding-left: 2.5em;
-  border-top: 1px solid $mediumgrey;
-  padding-top: 10px;
 
   -webkit-transition: all 1s ease-out 0s;
   transition: all 1s ease-out 0s;
