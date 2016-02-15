@@ -576,6 +576,8 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: sans-serif;
+  font-weight: 100;
+  color: #818181;
 }
 
 *, *:before, *:after {
@@ -601,7 +603,7 @@ h2 {
 .bah-accordion_element_header {
   margin-top: 30px;
   height: 2em;
-  padding: 5px 20px;
+  padding-bottom: 10px;
   position: relative;
   z-index: 20;
   display: block;
@@ -609,7 +611,7 @@ h2 {
 }
 
 .bah-accordion_element_header:hover {
-  background: #fff;
+  color: #C46E92;
 }
 
 .bah-accordion_element_check:checked + .bah-accordion_element_header {
@@ -635,14 +637,16 @@ h2 {
   position: relative;
   z-index: 10;
   opacity: 0;
-  padding-left: 1em;
+  padding-left: 2.5em;
 }
 
 .bah-accordion_element_check:checked ~ .bah-accordion_element_content {
   margin-top: 1em;
   height: auto;
   opacity: 1;
-  padding-left: 1em;
+  padding-left: 2.5em;
+  border-top: 1px solid #c1c1c1;
+  padding-top: 10px;
   transition: all 1s ease-out 0s;
 }
 

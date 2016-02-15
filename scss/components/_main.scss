@@ -12,6 +12,8 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: sans-serif;
+  font-weight: $light-font;
+  color: $text;
 }
 
 *, *:before, *:after {
@@ -37,14 +39,14 @@ h2 {
 .bah-accordion_element_header {
   margin-top: 30px;
   height: 2em;
-  padding: 5px 20px;
+  padding-bottom: 10px;
   position: relative;
   z-index: 20;
   display: block;
   cursor: pointer;
 
   &:hover {
-    background: #fff;
+    color: $pink;
   }
 }
 
@@ -71,14 +73,16 @@ h2 {
   position: relative;
   z-index: 10;
   opacity: 0;
-  padding-left: 1em;
+  padding-left: 2.5em;
 }
 
 .bah-accordion_element_check:checked ~ .bah-accordion_element_content {
   margin-top: 1em;
   height: auto;
   opacity: 1;
-  padding-left: 1em;
+  padding-left: 2.5em;
+  border-top: 1px solid $lightgrey;
+  padding-top: 10px;
 
   -webkit-transition: all 1s ease-out 0s;
   transition: all 1s ease-out 0s;
