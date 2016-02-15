@@ -24,7 +24,7 @@ html {
   text-align: left;
 }
 
-.bah-accordion__element__header {
+.bah-accordion_element_header {
   height: 30px;
   padding: 5px 20px;
   position: relative;
@@ -35,17 +35,17 @@ html {
   height: 30px;
 }
 
-.bah-accordion__element__header:hover {
+.bah-accordion_element_header:hover {
   background: #fff;
 }
 
-.bah-accordion__element__check:checked + .bah-accordion__element__header,
-.bah-accordion__element__check:checked + .bah-accordion__element__header:hover {
+.bah-accordion_element_check:checked + .bah-accordion_element_header,
+.bah-accordion_element_check:checked + .bah-accordion_element_header:hover {
   height: 30px;
 }
 
-.bah-accordion__element__header:hover:after,
-.bah-accordion__element__check:checked + .bah-accordion__element__header:hover:after {
+.bah-accordion_element_header:hover:after,
+.bah-accordion_element_check:checked + .bah-accordion_element_header:hover:after {
   content: '';
   position: absolute;
   width: 24px;
@@ -54,38 +54,32 @@ html {
   top: 7px;
 }
 
-.bah-accordion__element__check {
+.bah-accordion_element_check {
   display: none;
 }
 
-.bah-accordion__element__content {
+.bah-accordion_element_content {
   overflow: hidden;
   height: 0;
   position: relative;
   z-index: 10;
-  -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+
   transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
 }
 
-.bah-accordion__element__check:checked ~ .bah-accordion__element__content {
-  -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+.bah-accordion_element_check:checked ~ .bah-accordion_element_content {
+
   transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
 }
 
-.bah-accordion__element__check:checked ~ .bah-accordion__element__content--small {
+.bah-accordion_element_check:checked ~ .bah-accordion_element_content-small {
   height: 140px;
 }
 
-.bah-accordion__element__check:checked ~ .bah-accordion__element__content--medium {
+.bah-accordion_element_check:checked ~ .bah-accordion_element_content-medium {
   height: 180px;
 }
 
-.bah-accordion__element__check:checked ~ .bah-accordion__element__content--large {
+.bah-accordion_element_check:checked ~ .bah-accordion_element_content-large {
   height: 230px;
 }
