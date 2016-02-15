@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Playball);
 /*
   Gridifier || Code released under the UNLICENSE
   http://gridifier.web-dev.tools/#xs,4,0,0,0;s,4,25,0,0;m,4,38,1,1;l,4,60,1,1
@@ -579,6 +580,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+h2 {
+  font-family: "Playball", Arial, sans-serif;
 }
 
 .bah-accordion {
