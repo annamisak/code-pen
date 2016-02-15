@@ -593,31 +593,28 @@ h2 {
 }
 
 .bah-accordion_element_header {
-  height: 30px;
+  margin-top: 30px;
+  height: 2em;
   padding: 5px 20px;
   position: relative;
   z-index: 20;
   display: block;
-  height: 30px;
   cursor: pointer;
-  height: 30px;
 }
 
 .bah-accordion_element_header:hover {
   background: #fff;
 }
 
-.bah-accordion_element_check:checked + .bah-accordion_element_header,
-.bah-accordion_element_check:checked + .bah-accordion_element_header:hover {
-  height: 30px;
+.bah-accordion_element_check:checked + .bah-accordion_element_header {
+  height: 2em;
 }
 
-.bah-accordion_element_header:hover:after,
 .bah-accordion_element_check:checked + .bah-accordion_element_header:hover:after {
   content: '';
   position: absolute;
   width: 24px;
-  height: 24px;
+  height: 2em;
   right: 13px;
   top: 7px;
 }
@@ -631,23 +628,14 @@ h2 {
   height: 0;
   position: relative;
   z-index: 10;
-  transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  opacity: 0;
 }
 
 .bah-accordion_element_check:checked ~ .bah-accordion_element_content {
-  transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-}
-
-.bah-accordion_element_check:checked ~ .bah-accordion_element_content-small {
-  height: 140px;
-}
-
-.bah-accordion_element_check:checked ~ .bah-accordion_element_content-medium {
-  height: 180px;
-}
-
-.bah-accordion_element_check:checked ~ .bah-accordion_element_content-large {
-  height: 230px;
+  margin-top: 1em;
+  height: auto;
+  opacity: 1;
+  transition: all 1s ease-out 0s;
 }
 
 /*# sourceMappingURL=style.css.map */
