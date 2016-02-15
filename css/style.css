@@ -638,4 +638,11 @@ h2 {
   transition: all 1s ease-out 0s;
 }
 
+@media only screen and (min-width: 60em) {
+  .page-wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
