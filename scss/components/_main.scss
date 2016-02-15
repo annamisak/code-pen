@@ -20,10 +20,22 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: $pink;
+  padding: 4em 1.5em;
+}
+
 h1 {
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 100;
+  font-weight: $medium-font;
+  color: $white;
+  margin: 0;
 }
 
 h2 {
