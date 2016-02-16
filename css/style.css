@@ -602,9 +602,10 @@ h1 {
   margin: 0;
 }
 
-h2 {
+label {
   font-family: "Playball", Arial, sans-serif;
-  line-height: 1.9em;
+  font-size: 1.6em;
+  padding-top: 10px;
   padding-left: .4em;
   border-bottom: 1px solid #C46E92;
 }
@@ -694,7 +695,6 @@ h2 {
 }
 
 .bah-accordion_element_header {
-  margin-top: 18px;
   height: 2em;
   position: relative;
   z-index: 20;
@@ -707,7 +707,7 @@ h2 {
 }
 
 .bah-accordion_element_check:checked + .bah-accordion_element_header {
-  height: 3em;
+  height: 2em;
   background-color: #FDEEF4;
   color: #C46E92;
 }
@@ -729,6 +729,7 @@ h2 {
   height: auto;
   opacity: 1;
   padding-left: 2.5em;
+  border-bottom: 1px solid #C46E92;
   transition: all 1s ease 0s;
 }
 
