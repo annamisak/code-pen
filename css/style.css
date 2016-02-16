@@ -606,6 +606,11 @@ h2 {
   font-family: "Playball", Arial, sans-serif;
   line-height: 1.9em;
   padding-left: .4em;
+  border-bottom: 1px solid #C46E92;
+}
+
+.border-top {
+  border-top: 1px solid #C46E92;
 }
 
 /* ORIGINAL CSS CODE
@@ -689,7 +694,7 @@ h2 {
 }
 
 .bah-accordion_element_header {
-  margin-top: 30px;
+  margin-top: 18px;
   height: 2em;
   position: relative;
   z-index: 20;
@@ -705,7 +710,6 @@ h2 {
   height: 3em;
   background-color: #FDEEF4;
   color: #C46E92;
-  border-bottom: 1px solid #C46E92;
 }
 
 .bah-accordion_element_check {
@@ -722,11 +726,10 @@ h2 {
 }
 
 .bah-accordion_element_check:checked ~ .bah-accordion_element_content {
-  margin-top: .5em;
   height: auto;
   opacity: 1;
   padding-left: 2.5em;
-  transition: all 1s ease-out 0s;
+  transition: all 1s ease 0s;
 }
 
 @media only screen and (min-width: 60em) {

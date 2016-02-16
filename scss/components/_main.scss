@@ -42,7 +42,11 @@ h2 {
   font-family: $playball;
   line-height: 1.9em;
   padding-left: .4em;
+  border-bottom: 1px solid $pink;
+}
 
+.border-top {
+  border-top: 1px solid $pink;
 }
 
 /* ORIGINAL CSS CODE
@@ -128,7 +132,7 @@ h2 {
 }
 
 .bah-accordion_element_header {
-  margin-top: 30px;
+  margin-top: 18px;
   height: 2em;
   position: relative;
   z-index: 20;
@@ -144,7 +148,6 @@ h2 {
   height: 3em;
   background-color: $lightpink;
   color: $pink;
-  border-bottom: 1px solid $pink;
 }
 
 .bah-accordion_element_check {
@@ -161,13 +164,12 @@ h2 {
 }
 
 .bah-accordion_element_check:checked ~ .bah-accordion_element_content {
-  margin-top: .5em;
   height: auto;
   opacity: 1;
   padding-left: 2.5em;
 
-  -webkit-transition: all 1s ease-out 0s;
-  transition: all 1s ease-out 0s;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 
 @media only screen and (min-width: 60em) {
