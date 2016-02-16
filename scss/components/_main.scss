@@ -38,9 +38,10 @@ h1 {
   margin: 0;
 }
 
-h2 {
+label {
   font-family: $playball;
-  line-height: 1.9em;
+  font-size: 1.6em;
+  padding-top: 10px;
   padding-left: .4em;
   border-bottom: 1px solid $pink;
 }
@@ -132,7 +133,6 @@ h2 {
 }
 
 .bah-accordion_element_header {
-  margin-top: 18px;
   height: 2em;
   position: relative;
   z-index: 20;
@@ -145,7 +145,7 @@ h2 {
 }
 
 .bah-accordion_element_check:checked + .bah-accordion_element_header {
-  height: 3em;
+  height: 2em;
   background-color: $lightpink;
   color: $pink;
 }
@@ -167,6 +167,7 @@ h2 {
   height: auto;
   opacity: 1;
   padding-left: 2.5em;
+  border-bottom: 1px solid $pink;
 
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
